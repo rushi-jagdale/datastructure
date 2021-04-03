@@ -13,7 +13,7 @@ class LinkedList:
         while temp:
             print(temp.data)
             temp = temp.Next
-    def addbig(self,newdata):
+    def addbigging(self,newdata):
         nd = Node(newdata)
         nd.Next = self.head
         self.head = nd
@@ -22,7 +22,10 @@ lst = LinkedList()
 lst.head = Node(7)
 e = Node(4)
 e2 = Node(5)
+e3 = Node(6)
 lst.head.Next = e
 e.Next = e2
-lst.addbig(99)
+e2.Next = e3
+lst.addbigging(99)
+lst.addbigging(33)
 lst.printlst()
